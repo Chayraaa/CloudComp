@@ -2,6 +2,9 @@
 
 ## Setup
 
+Zuerst muss Docker, docker-compose, minikube und kubectl installiert werden.
+Wenn Docker sagt, keine permissions zum start zu haben, sollte man das system neustarten. Wenn das nicht geht `sudo usermod -aG docker $USER` und dann neustarten.
+
 ### Docker
 
 1. Generate the keys for https: \
@@ -22,7 +25,7 @@
    `./rollout.sh`
 4. Tunnel starten \
    `minikube tunnel`
-5. Verbinden durch: http://localhost \
+5. Verbinden durch: http://localhost 
 
 *Note: Ich habe keinen `host` bei ingress benutzt, da es DNS probleme gab.
 Wenn man eine funktionierende Domain hätte, könnte man es auch einfach einfügen.*

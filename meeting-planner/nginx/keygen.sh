@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 mkdir nginx/keys
 openssl req -x509 -nodes -days 365 \
